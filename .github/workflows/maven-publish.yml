@@ -60,4 +60,4 @@ jobs:
         java-version: '11'
 
     - name: Run Integration Tests
-      run: mvn verify -Pintegration-tests
+      uses: mvn verify -Pintegration-tests
