@@ -43,7 +43,7 @@ jobs:
         distribution: 'temurin'  
     
     - name: Test with Maven
-      uses: mvn test
+      run: mvn test
 
   integration-test:
     needs: build
@@ -60,4 +60,4 @@ jobs:
         java-version: '11'
 
     - name: Run Integration Tests
-      uses: mvn verify -Pintegration-tests
+      run: mvn verify -Pintegration-tests
